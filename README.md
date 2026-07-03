@@ -183,8 +183,26 @@ http://你的服务器IP:7575
 ## 七、补充说明
 
 - VoWiFi 不是只要有网就一定能用，还取决于运营商、号码状态和网络环境要求
+- 如果你的需求只是短信、代理池、多模组管理，不折腾 VoWiFi 也可以先用起来
 - 本程序已禁止国内运营商卡发起VoWifi，请遵纪守法。
+## 八、已知Vohive支持VoWifi的运营商
 
+- CTE UK
+- CMLINK UK
+- giffgaff UK
+- VOXI UK
+- Vodafone UK
+- 3UK
+
+- Vodafone DE
+- Telekom DE
+- O2 DE
+
+- T-Mobile US
+- RedPocket US
+- Lyca US
+- AT&T US
+- 未标出的不代表不兼容，只是我没有
 ### 程序截图
 
 ![image](https://cdn.nodeimage.com/i/rnGhjMfPlMatrdxQMPogawI3d5OGc1Fu.png)
