@@ -94,6 +94,12 @@ wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/ma
 wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh | sh -s -- --no-systemd
 ```
 
+测试安装，不实际执行：
+
+```sh
+wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh | sh -s -- --dry-run
+```
+
 卸载：
 
 ```sh
