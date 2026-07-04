@@ -1,9 +1,9 @@
 # VoHive Release
 
-公开分发仓库：提供二进制发布资产、安装脚本和运维文档。
+提供二进制发布资产、安装脚本和运维文档。原项目二进制发布仓库https://github.com/iniwex5/vohive-release，目前已撤回文件。
 
 # 项目源码
-https://github.com/iniwex5/vohive
+https://github.com/iniwex5/vohive，一个第三方备份https://github.com/6mb/vohive。
 
 ## 免责声明
 
@@ -77,8 +77,7 @@ echo 'AT+QCFG="usbnet",0;+CFUN=1,1' | sudo socat - /dev/ttyUSB2,crnl
 Linux / OpenWrt：
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh \
-  | env VOHIVE_RELEASE_REPO=umonaca/vohive-release sh
+wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh | sh
 ```
 
 说明：旧的 `curl -fsSL ... | bash` 方式仍然兼容。
@@ -86,15 +85,13 @@ wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/ma
 指定版本：
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh \
-  | env VOHIVE_RELEASE_REPO=umonaca/vohive-release sh -s -- --version v1.5.5
+wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh | sh -s -- --version v1.5.5
 ```
 
 仅安装二进制（跳过自动服务注册，兼容旧参数名 `--no-systemd`）：
 
 ```sh
-wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh \
-  | env VOHIVE_RELEASE_REPO=umonaca/vohive-release sh -s -- --no-systemd
+wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/install.sh | sh -s -- --no-systemd
 ```
 
 卸载：
