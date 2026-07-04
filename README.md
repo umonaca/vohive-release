@@ -106,8 +106,11 @@ wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/ma
 wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/master/uninstall.sh | sh
 ```
 
+### 离线安装方式
 
-## 默认安装目录（便携部署）
+下载 `install_offline.sh`，`chmod +x` 赋予执行权限，下载二进制文件到当前目录下（默认为 `vohive_v1.5.5_linux_amd64`，需要时可根据文件名自行设定`LOCAL_BINARY`变量），执行 `.\install_offline.sh` 安装
+
+### 默认安装目录（便携部署）
 
 - 二进制：`/opt/vohive/bin/vohive`
 - 配置：`/opt/vohive/config/config.yaml`
@@ -115,7 +118,7 @@ wget -qO- https://raw.githubusercontent.com/umonaca/vohive-release/refs/heads/ma
 - 日志目录：`/opt/vohive/logs`
 
 
-## 五、部署方式二：Docker / Docker Compose
+## 五、~~部署方式二：Docker / Docker Compose~~ 目前暂不可用
 
 ### 1. 创建目录
 
